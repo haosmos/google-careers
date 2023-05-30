@@ -32,10 +32,14 @@
               v-else
               text="Sign in"
               type="primary"
-              @click="loginUser"/>
+              @click="loginUser"
+          />
         </div>
 
       </div>
+
+      <sub-nav-menu v-if="isLoggedIn"/>
+
     </div>
   </header>
 </template>
@@ -43,12 +47,14 @@
 <script>
 import ActionButton from '@/components/ActionButton.vue';
 import ProfileImage from '@/components/ProfileImage.vue';
+import SubNavMenu from '@/components/SubNavMenu.vue';
 
 export default {
   name: 'MainNav',
   components: {
     ProfileImage,
     ActionButton,
+    SubNavMenu
   },
   data() {
     return {
