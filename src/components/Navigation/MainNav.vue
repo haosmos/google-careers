@@ -46,9 +46,9 @@
 </template>
 
 <script>
-import ActionButton from '@/components/ActionButton.vue';
-import ProfileImage from '@/components/ProfileImage.vue';
-import SubNavMenu from '@/components/SubNavMenu.vue';
+import ActionButton from '@/components/Shared/ActionButton.vue';
+import ProfileImage from '@/components/Navigation/ProfileImage.vue';
+import SubNavMenu from '@/components/Navigation/SubNavMenu.vue';
 
 export default {
   name: 'MainNav',

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue';
-import HeadLine from '@/components/HeadLine.vue';
+import HeadLine from '@/components/JobSearch/HeadLine.vue';
 import { nextTick } from 'vue';
 
 describe('HeadLine', () => {
