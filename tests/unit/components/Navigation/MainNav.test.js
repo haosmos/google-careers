@@ -1,13 +1,21 @@
 import { render, screen } from '@testing-library/vue';
 import MainNav from '@/components/Navigation/MainNav.vue';
 import userEvent from '@testing-library/user-event';
+import { RouterLinkStub } from '@vue/test-utils';
 
 describe('MainNav', () => {
   const renderMainNav = () => {
+    const $route = {
+      name: "Home",
+    }
     render(MainNav, {
       global: {
+        mocks: {
+          $route: $route,
+        },
         stubs: {
-          FontAwesomeIcon: true
+          FontAwesomeIcon: true,
+          RouterLink: RouterLinkStub,
         }
       },
     });
@@ -15,7 +23,7 @@ describe('MainNav', () => {
   
   it('displays company name', () => {
     renderMainNav();
-    const companyName = screen.getByText('vit chaosmos');
+    const companyName = screen.getByText('Chaosmos Ko');
     expect(companyName).toBeInTheDocument();
   });
   

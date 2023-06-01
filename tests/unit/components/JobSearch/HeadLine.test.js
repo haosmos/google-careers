@@ -34,12 +34,14 @@ describe('HeadLine', () => {
   });
   
   it('removes interval when component unmounts', () => {
+    vi.useFakeTimers();
     const clearInterval = vi.fn();
-    vi.stubGlobal('clearInterval', clearInterval);
+    vi.stubGlobal("clearInterval", clearInterval);
 
     const { unmount } = render(HeadLine);
     unmount();
 
     expect(clearInterval).toHaveBeenCalled();
+    vi.useRealTimers();
   });
 });

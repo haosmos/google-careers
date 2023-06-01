@@ -2,41 +2,33 @@ import { render, screen } from '@testing-library/vue';
 import SubNavMenu from '@/components/Navigation/SubNavMenu.vue';
 
 describe('SubNavMenu', () => {
+  const renderSubNavMenu = (routeName) => {
+    render(SubNavMenu, {
+      global: {
+        mocks: {
+          $route: routeName,
+        },
+        stubs: {
+          FontAwesomeIcon: true
+        }
+      },
+    })
+  }
+  
   describe("when user is on jobs page", () => {
     it('displays job count', () => {
-      render(SubNavMenu, {
-        global: {
-          stubs: {
-            FontAwesomeIcon: true
-          }
-        },
-        data() {
-          return {
-            onJobResultsPage: true
-          };
-        },
-      });
+      const routeName = "JobResults";
+      renderSubNavMenu(routeName);
+      const jobCount = screen.getByText("1653");
       
-      const jobCount = screen.queryByText("1653");
       expect(jobCount).toBeInTheDocument();
     })
   })
   
   describe("when user is not on jobs page", () => {
     it('does NOT displays job count', () => {
-      render(SubNavMenu, {
-        global: {
-          stubs: {
-            FontAwesomeIcon: true
-          }
-        },
-        data() {
-          return {
-            onJobResultsPage: false
-          };
-        },
-      });
-      
+      const routeName = "Home";
+      renderSubNavMenu(routeName)
       const jobCount = screen.queryByText("1653");
       expect(jobCount).not.toBeInTheDocument();
     })

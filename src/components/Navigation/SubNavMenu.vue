@@ -21,10 +21,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
   name: 'SubNavMenu',
   components: { FontAwesomeIcon },
-  data() {
-    return {
-      onJobResultsPage: true,
-    };
+  computed: {
+    onJobResultsPage() {
+     return this.$route.name === "JobResults";
+    }
   },
 };
 </script>
