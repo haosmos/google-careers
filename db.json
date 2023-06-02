@@ -1,0 +1,1108 @@
+{
+	"jobs": [
+		{
+			"id": 1,
+			"title": "Angular developer",
+			"organization": "Google",
+			"jobType": "Intern",
+			"locations": ["Lisbon"],
+			"minimumQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"preferrendQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"description": [
+				"sonet utinam et fugit class solum verear eum veritus suspendisse natum dico constituam ultrices iriure magna",
+				"uidem conclusionemque agam vidisse nullam mei posse persequeris omittantur affe",
+				"saliquam tincidunt ridens saperet explicari sit aliquid dissentiunt singulis nostrum dol "
+			],
+			"dateAdded": "2022-01-0"
+		},
+		{
+			"id": 2,
+			"title": "Frontend Engineer",
+			"organization": "Google",
+			"jobType": "Full-time",
+			"locations": ["San Francisco", "New York"],
+			"minimumQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"preferrendQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"description": [
+				"sonnet utinam et fugit class solum verear eum veritus suspendisse natum dico constituam ultrices iriure magna",
+				"uidem conclusionemque agam vidisse nullam mei posse persequeris omittantur affe",
+				"saliquam tincidunt ridens saperet explicari sit aliquid dissentiunt singulis nostrum dol"
+			],
+			"dateAdded": "2022-02-10"
+		},
+		{
+			"id": 3,
+			"title": "Software Engineer",
+			"organization": "Google",
+			"jobType": "Full-time",
+			"locations": ["Mountain View", "San Francisco"],
+			"minimumQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"preferrendQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"description": [
+				"sonnet utinam et fugit class solum verear eum veritus suspendisse natum dico constituam ultrices iriure magna",
+				"uidem conclusionemque agam vidisse nullam mei posse persequeris omittantur affe",
+				"saliquam tincidunt ridens saperet explicari sit aliquid dissentiunt singulis nostrum dol"
+			],
+			"dateAdded": "2022-03-15"
+		},
+		{
+			"id": 4,
+			"title": "UX Designer",
+			"organization": "Google",
+			"jobType": "Full-time",
+			"locations": ["London", "Dublin"],
+			"minimumQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"preferrendQualifications": [
+				"Esse mea vestibulum noster sanctus dolorem maximus gloriatur magnis velit alique",
+				"Lorem ipsum dolor sit amet",
+				"expetendis accommodare quaeque nunc luctus singulis no explicari mus"
+			],
+			"description": [
+				"sonnet utinam et fugit class solum verear eum veritus suspendisse natum dico constituam ultrices iriure magna",
+				"uidem conclusionemque agam vidisse nullam mei posse persequeris omittantur affe",
+				"saliquam tincidunt ridens saperet explicari sit aliquid dissentiunt singulis nostrum dol"
+			],
+			"dateAdded": "2022-04-20"
+		},
+		{
+			"id": 51,
+			"title": "Mobile App Developer",
+			"organization": "ABC Mobile",
+			"jobType": "Full-time",
+			"locations": ["Los Angeles"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience developing mobile applications for iOS and/or Android",
+				"Proficiency in programming languages such as Swift or Kotlin"
+			],
+			"preferredQualifications": [
+				"Master's degree in Computer Science or related field",
+				"Familiarity with cross-platform development frameworks like React Native",
+				"Knowledge of mobile UI/UX best practices"
+			],
+			"description": [
+				"We are seeking a talented Mobile App Developer to join our mobile development team.",
+				"Responsibilities include designing and building mobile applications, collaborating with designers and backend developers, and ensuring high-quality code.",
+				"The ideal candidate should have a passion for mobile technologies and a desire to create innovative and user-friendly mobile experiences."
+			],
+			"dateAdded": "2023-05-05"
+		},
+		{
+			"id": 52,
+			"title": "Data Scientist",
+			"organization": "XYZ Analytics",
+			"jobType": "Full-time",
+			"locations": ["Toronto"],
+			"minimumQualifications": [
+				"Master's degree in Data Science, Statistics, or related field",
+				"Proficiency in programming languages such as Python or R",
+				"Experience with machine learning algorithms and statistical modeling"
+			],
+			"preferredQualifications": [
+				"Ph.D. in Data Science, Statistics, or related field",
+				"Knowledge of big data frameworks like Hadoop or Spark",
+				"Strong problem-solving and communication skills"
+			],
+			"description": [
+				"We are looking for a skilled Data Scientist to join our analytics team.",
+				"Responsibilities include conducting data analysis, developing predictive models, and communicating insights to stakeholders.",
+				"The ideal candidate should have a strong background in data science, with a passion for solving complex problems using data-driven approaches."
+			],
+			"dateAdded": "2023-05-06"
+		},
+		{
+			"id": 53,
+			"title": "UI/UX Designer",
+			"organization": "Design Studio X",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Design, Human-Computer Interaction, or related field",
+				"Proficiency in design and prototyping tools like Sketch or Figma",
+				"Experience with user research and usability testing"
+			],
+			"preferredQualifications": [
+				"Master's degree in Design or related field",
+				"Knowledge of front-end development technologies such as HTML, CSS, and JavaScript",
+				"Strong visual design skills and attention to detail"
+			],
+			"description": [
+				"We are seeking a talented UI/UX Designer to join our design team.",
+				"Responsibilities include creating user-centric designs, conducting user research, and collaborating with cross-functional teams to deliver intuitive and visually appealing user experiences.",
+				"The ideal candidate should have a strong portfolio showcasing their design skills and a passion for creating innovative and user-friendly interfaces."
+			],
+			"dateAdded": "2023-05-07"
+		},
+		{
+			"id": 54,
+			"title": "DevOps Engineer",
+			"organization": "Tech Innovators",
+			"jobType": "Full-time",
+			"locations": ["Berlin"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience with cloud platforms like AWS or Azure",
+				"Knowledge of containerization technologies like Docker and orchestration tools like Kubernetes"
+			],
+			"preferredQualifications": [
+				"Experience with configuration management tools like Ansible or Puppet",
+				"Understanding of CI/CD pipelines and automation",
+				"Strong troubleshooting and problem-solving skills"
+			],
+			"description": [
+				"We are looking for a skilled DevOps Engineer to join our tech team.",
+				"Responsibilities include managing and improving our infrastructure, implementing CI/CD processes, and collaborating with development teams to ensure smooth operations.",
+				"The ideal candidate should have a solid understanding of DevOps principles and a passion for automating processes and improving efficiency."
+			],
+			"dateAdded": "2023-05-08"
+		},
+		{
+			"id": 55,
+			"title": "Quality Assurance Engineer",
+			"organization": "Software Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in software testing and quality assurance",
+				"Knowledge of testing frameworks and methodologies"
+			],
+			"preferredQualifications": [
+				"Certifications in quality assurance or related field",
+				"Experience with test automation tools and frameworks",
+				"Strong attention to detail and analytical skills"
+			],
+			"description": [
+				"We are seeking a detail-oriented Quality Assurance Engineer to join our team.",
+				"Responsibilities include designing and executing test plans, identifying and documenting bugs, and ensuring the quality and reliability of our software products.",
+				"The ideal candidate should have a strong understanding of software testing principles and a passion for delivering high-quality software."
+			],
+			"dateAdded": "2023-05-09"
+		},
+		{
+			"id": 56,
+			"title": "Data Engineer",
+			"organization": "DataTech Solutions",
+			"jobType": "Contract",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science, Engineering, or related field",
+				"Experience with data warehousing and ETL processes",
+				"Proficiency in programming languages such as Python or Scala"
+			],
+			"preferredQualifications": [
+				"Master's degree in Computer Science, Engineering, or related field",
+				"Experience with big data technologies like Hadoop or Spark",
+				"Understanding of data modeling and database design principles"
+			],
+			"description": [
+				"We are looking for a skilled Data Engineer to join our data team.",
+				"Responsibilities include designing and developing data pipelines, implementing data models, and optimizing data workflows for performance and scalability.",
+				"The ideal candidate should have a strong background in data engineering and a passion for working with large-scale datasets."
+			],
+			"dateAdded": "2023-05-10"
+		},
+		{
+			"id": 57,
+			"title": "Full Stack Developer",
+			"organization": "Tech Innovators",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience with front-end and back-end technologies",
+				"Proficiency in programming languages such as JavaScript, HTML, and CSS"
+			],
+			"preferredQualifications": [
+				"Experience with frameworks like React or Angular",
+				"Knowledge of server-side technologies like Node.js or Django",
+				"Familiarity with database systems and SQL"
+			],
+			"description": [
+				"We are seeking a talented Full Stack Developer to join our development team.",
+				"Responsibilities include designing and implementing web applications, collaborating with designers and backend developers, and ensuring high-quality code.",
+				"The ideal candidate should have a solid understanding of both front-end and back-end development and a passion for building scalable and responsive applications."
+			],
+			"dateAdded": "2023-05-11"
+		},
+		{
+			"id": 58,
+			"title": "Network Administrator",
+			"organization": "IT Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science, Information Technology, or related field",
+				"Experience in network administration and troubleshooting",
+				"Knowledge of network protocols, security, and infrastructure"
+			],
+			"preferredQualifications": [
+				"Certifications in network administration or related field",
+				"Experience with network monitoring and performance optimization",
+				"Strong problem-solving and communication skills"
+			],
+			"description": [
+				"We are looking for a skilled Network Administrator to join our IT team.",
+				"Responsibilities include managing and maintaining network infrastructure, troubleshooting network issues, and implementing security measures.",
+				"The ideal candidate should have a strong understanding of network administration principles and a passion for ensuring network reliability and performance."
+			],
+			"dateAdded": "2023-05-12"
+		},
+		{
+			"id": 59,
+			"title": "Full Stack Developer",
+			"organization": "Tech Innovators",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience with front-end and back-end technologies",
+				"Proficiency in programming languages such as JavaScript, HTML, and CSS"
+			],
+			"preferredQualifications": [
+				"Experience with frameworks like React or Angular",
+				"Knowledge of server-side technologies like Node.js or Django",
+				"Familiarity with database systems and SQL"
+			],
+			"description": [
+				"We are seeking a talented Full Stack Developer to join our development team.",
+				"Responsibilities include designing and implementing web applications, collaborating with designers and backend developers, and ensuring high-quality code.",
+				"The ideal candidate should have a solid understanding of both front-end and back-end development and a passion for building scalable and responsive applications."
+			],
+			"dateAdded": "2023-05-11"
+		},
+		{
+			"id": 60,
+			"title": "Network Administrator",
+			"organization": "IT Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science, Information Technology, or related field",
+				"Experience in network administration and troubleshooting",
+				"Knowledge of network protocols, security, and infrastructure"
+			],
+			"preferredQualifications": [
+				"Certifications in network administration or related field",
+				"Experience with network monitoring and performance optimization",
+				"Strong problem-solving and communication skills"
+			],
+			"description": [
+				"We are looking for a skilled Network Administrator to join our IT team.",
+				"Responsibilities include managing and maintaining network infrastructure, troubleshooting network issues, and implementing security measures.",
+				"The ideal candidate should have a strong understanding of network administration principles and a passion for ensuring network reliability and performance."
+			],
+			"dateAdded": "2023-05-12"
+		},
+		{
+			"id": 61,
+			"title": "Front-end Developer",
+			"organization": "WebTech Solutions",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience with front-end development technologies like HTML, CSS, and JavaScript",
+				"Knowledge of responsive design principles"
+			],
+			"preferredQualifications": [
+				"Experience with front-end frameworks like React or Vue.js",
+				"Familiarity with version control systems like Git",
+				"Strong problem-solving and debugging skills"
+			],
+			"description": [
+				"We are seeking a skilled Front-end Developer to join our development team.",
+				"Responsibilities include translating design wireframes into interactive web interfaces, optimizing web performance, and collaborating with back-end developers.",
+				"The ideal candidate should have a passion for creating visually appealing and user-friendly web applications."
+			],
+			"dateAdded": "2023-05-13"
+		},
+		{
+			"id": 62,
+			"title": "Business Analyst",
+			"organization": "Global Enterprises",
+			"jobType": "Full-time",
+			"locations": ["Toronto"],
+			"minimumQualifications": [
+				"Bachelor's degree in Business Administration, Finance, or related field",
+				"Experience in business analysis and requirements gathering",
+				"Strong analytical and problem-solving skills"
+			],
+			"preferredQualifications": [
+				"Certifications in business analysis or related field",
+				"Experience with data analysis and visualization",
+				"Excellent communication and documentation skills"
+			],
+			"description": [
+				"We are looking for a skilled Business Analyst to join our team.",
+				"Responsibilities include analyzing business processes, gathering and documenting requirements, and collaborating with stakeholders to identify improvement opportunities.",
+				"The ideal candidate should have a deep understanding of business analysis principles and a passion for driving business growth through data-driven insights."
+			],
+			"dateAdded": "2023-05-14"
+		},
+		{
+			"id": 63,
+			"title": "Mobile App Developer",
+			"organization": "AppTech Solutions",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience with mobile app development for iOS or Android",
+				"Proficiency in programming languages such as Swift, Objective-C, or Java"
+			],
+			"preferredQualifications": [
+				"Experience with cross-platform frameworks like React Native or Flutter",
+				"Knowledge of mobile UI/UX design principles",
+				"Strong problem-solving and debugging skills"
+			],
+			"description": [
+				"We are seeking a talented Mobile App Developer to join our development team.",
+				"Responsibilities include designing and building mobile applications, collaborating with designers and backend developers, and ensuring app performance and usability.",
+				"The ideal candidate should have a passion for creating innovative and user-friendly mobile experiences."
+			],
+			"dateAdded": "2023-05-17"
+		},
+		{
+			"id": 64,
+			"title": "Data Analyst",
+			"organization": "Analytics Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Statistics, Mathematics, or related field",
+				"Experience with data analysis and visualization tools",
+				"Strong analytical and problem-solving skills"
+			],
+			"preferredQualifications": [
+				"Master's degree in Data Science or related field",
+				"Experience with statistical modeling and machine learning techniques",
+				"Proficiency in programming languages such as Python or R"
+			],
+			"description": [
+				"We are looking for a skilled Data Analyst to join our team.",
+				"Responsibilities include collecting and analyzing data, creating reports and dashboards, and providing data-driven insights to stakeholders.",
+				"The ideal candidate should have a passion for turning complex data into actionable insights and a strong attention to detail."
+			],
+			"dateAdded": "2023-05-18"
+		},
+		{
+			"id": 65,
+			"title": "UI/UX Designer",
+			"organization": "Creative Studio",
+			"jobType": "Full-time",
+			"locations": ["Toronto"],
+			"minimumQualifications": [
+				"Bachelor's degree in Design, HCI, or related field",
+				"Experience in UI/UX design for web and mobile applications",
+				"Proficiency in design tools such as Sketch or Figma"
+			],
+			"preferredQualifications": [
+				"Experience with prototyping tools like InVision or Adobe XD",
+				"Knowledge of usability principles and best practices",
+				"Strong communication and collaboration skills"
+			],
+			"description": [
+				"We are seeking a talented UI/UX Designer to join our design team.",
+				"Responsibilities include creating user-centered designs, conducting user research, and collaborating with cross-functional teams to deliver intuitive and visually appealing interfaces.",
+				"The ideal candidate should have a passion for creating exceptional user experiences and a strong eye for aesthetics."
+			],
+			"dateAdded": "2023-05-19"
+		},
+		{
+			"id": 66,
+			"title": "Project Manager",
+			"organization": "Tech Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Business, Engineering, or related field",
+				"Experience in project management and leading cross-functional teams",
+				"Strong organizational and leadership skills"
+			],
+			"preferredQualifications": [
+				"Certifications in project management or related field (e.g., PMP)",
+				"Experience with Agile methodologies and tools",
+				"Excellent communication and stakeholder management skills"
+			],
+			"description": [
+				"We are looking for a skilled Project Manager to join our team.",
+				"Responsibilities include planning and managing project timelines, coordinating resources, and ensuring successful project delivery.",
+				"The ideal candidate should have a proven track record in project management and a passion for driving results through effective planning and execution."
+			],
+			"dateAdded": "2023-05-20"
+		},
+		{
+			"id": 67,
+			"title": "Quality Assurance Engineer",
+			"organization": "Software Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in software quality assurance and testing",
+				"Knowledge of testing methodologies and tools"
+			],
+			"preferredQualifications": [
+				"Experience with automated testing frameworks",
+				"Familiarity with Agile development practices",
+				"Strong attention to detail and problem-solving skills"
+			],
+			"description": [
+				"We are seeking a skilled Quality Assurance Engineer to join our development team.",
+				"Responsibilities include designing and executing test plans, identifying and reporting bugs, and ensuring software quality and reliability.",
+				"The ideal candidate should have a passion for delivering high-quality software products and improving the overall user experience."
+			],
+			"dateAdded": "2023-05-21"
+		},
+		{
+			"id": 68,
+			"title": "Content Writer",
+			"organization": "Digital Marketing Agency",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in English, Communications, or related field",
+				"Experience in content writing and copywriting",
+				"Excellent writing and editing skills"
+			],
+			"preferredQualifications": [
+				"Experience with SEO writing and keyword research",
+				"Familiarity with digital marketing strategies",
+				"Strong research and storytelling abilities"
+			],
+			"description": [
+				"We are looking for a talented Content Writer to join our team.",
+				"Responsibilities include creating engaging and persuasive content for websites, blogs, and marketing campaigns.",
+				"The ideal candidate should have a passion for storytelling, a strong command of language, and the ability to adapt writing style for different audiences and platforms."
+			],
+			"dateAdded": "2023-05-22"
+		},
+		{
+			"id": 69,
+			"title": "Network Engineer",
+			"organization": "Tech Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Network Engineering, Computer Science, or related field",
+				"Experience in network design, implementation, and troubleshooting",
+				"Knowledge of network protocols and technologies"
+			],
+			"preferredQualifications": [
+				"Certifications such as CCNA or CCNP",
+				"Experience with network security technologies and best practices",
+				"Strong problem-solving and communication skills"
+			],
+			"description": [
+				"We are seeking a skilled Network Engineer to join our team.",
+				"Responsibilities include designing and maintaining network infrastructure, optimizing network performance, and ensuring network security.",
+				"The ideal candidate should have a deep understanding of networking principles and a passion for building reliable and scalable network solutions."
+			],
+			"dateAdded": "2023-05-23"
+		},
+		{
+			"id": 70,
+			"title": "Graphic Designer",
+			"organization": "Creative Studio",
+			"jobType": "Full-time",
+			"locations": ["Toronto"],
+			"minimumQualifications": [
+				"Bachelor's degree in Graphic Design, Fine Arts, or related field",
+				"Experience in graphic design and visual communication",
+				"Proficiency in design software such as Adobe Creative Suite"
+			],
+			"preferredQualifications": [
+				"Experience with branding and logo design",
+				"Knowledge of typography and layout principles",
+				"Strong creativity and attention to detail"
+			],
+			"description": [
+				"We are looking for a talented Graphic Designer to join our design team.",
+				"Responsibilities include creating visually appealing graphics, collaborating with clients and teammates, and delivering design assets across various mediums.",
+				"The ideal candidate should have a passion for visual storytelling and a strong portfolio showcasing their design skills."
+			],
+			"dateAdded": "2023-05-24"
+		},
+		{
+			"id": 71,
+			"title": "DevOps Engineer",
+			"organization": "Cloud Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in DevOps practices and tools",
+				"Knowledge of cloud platforms and technologies"
+			],
+			"preferredQualifications": [
+				"Certifications in DevOps or cloud technologies",
+				"Experience with infrastructure as code and configuration management",
+				"Strong problem-solving and collaboration skills"
+			],
+			"description": [
+				"We are seeking a skilled DevOps Engineer to join our team.",
+				"Responsibilities include automating infrastructure, implementing continuous integration and delivery pipelines, and ensuring system scalability and reliability.",
+				"The ideal candidate should have a deep understanding of DevOps principles and a passion for streamlining development processes."
+			],
+			"dateAdded": "2023-05-25"
+		},
+		{
+			"id": 72,
+			"title": "HR Manager",
+			"organization": "Global Corporation",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Human Resources, Business, or related field",
+				"Experience in HR management and employee relations",
+				"Strong knowledge of employment laws and regulations"
+			],
+			"preferredQualifications": [
+				"Master's degree in HR or related field",
+				"Certifications in HR management",
+				"Excellent communication and interpersonal skills"
+			],
+			"description": [
+				"We are looking for a skilled HR Manager to join our team.",
+				"Responsibilities include managing employee recruitment, onboarding, performance evaluation, and employee relations.",
+				"The ideal candidate should have a thorough understanding of HR best practices and a passion for fostering a positive work environment."
+			],
+			"dateAdded": "2023-05-26"
+		},
+		{
+			"id": 73,
+			"title": "Database Administrator",
+			"organization": "Tech Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in database administration and management",
+				"Knowledge of SQL and database technologies"
+			],
+			"preferredQualifications": [
+				"Certifications in database administration (e.g., Oracle, MySQL)",
+				"Experience with database performance optimization",
+				"Strong problem-solving and troubleshooting skills"
+			],
+			"description": [
+				"We are seeking a skilled Database Administrator to join our team.",
+				"Responsibilities include managing and optimizing databases, ensuring data integrity and security, and troubleshooting database issues.",
+				"The ideal candidate should have a deep understanding of database systems and a passion for maintaining high-quality data infrastructure."
+			],
+			"dateAdded": "2023-05-27"
+		},
+		{
+			"id": 74,
+			"title": "Sales Representative",
+			"organization": "Global Sales Solutions",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Business, Marketing, or related field",
+				"Experience in sales or customer service",
+				"Strong communication and negotiation skills"
+			],
+			"preferredQualifications": [
+				"Experience in B2B sales",
+				"Knowledge of sales techniques and strategies",
+				"Goal-oriented and self-motivated"
+			],
+			"description": [
+				"We are looking for a dynamic Sales Representative to join our team.",
+				"Responsibilities include prospecting and acquiring new clients, maintaining relationships with existing clients, and achieving sales targets.",
+				"The ideal candidate should have a passion for sales, excellent interpersonal skills, and the ability to thrive in a target-driven environment."
+			],
+			"dateAdded": "2023-05-28"
+		},
+		{
+			"id": 75,
+			"title": "Data Scientist",
+			"organization": "Data Analytics Co.",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Master's degree or Ph.D. in Data Science, Statistics, or related field",
+				"Experience in data analysis and machine learning",
+				"Proficiency in programming languages such as Python or R"
+			],
+			"preferredQualifications": [
+				"Experience with big data technologies and frameworks (e.g., Hadoop, Spark)",
+				"Knowledge of statistical modeling and predictive analytics",
+				"Strong problem-solving and analytical skills"
+			],
+			"description": [
+				"We are seeking a talented Data Scientist to join our analytics team.",
+				"Responsibilities include analyzing large datasets, developing predictive models, and extracting insights to drive business decisions.",
+				"The ideal candidate should have a deep understanding of data science methodologies and a passion for uncovering patterns in complex data."
+			],
+			"dateAdded": "2023-05-29"
+		},
+		{
+			"id": 76,
+			"title": "Product Manager",
+			"organization": "Tech Innovators Inc.",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Business, Computer Science, or related field",
+				"Experience in product management or related roles",
+				"Strong analytical and problem-solving skills"
+			],
+			"preferredQualifications": [
+				"Experience in Agile product development methodologies",
+				"Knowledge of user-centered design principles",
+				"Excellent communication and leadership abilities"
+			],
+			"description": [
+				"We are looking for a skilled Product Manager to join our team.",
+				"Responsibilities include defining product vision, gathering and prioritizing requirements, and collaborating with cross-functional teams to deliver successful products.",
+				"The ideal candidate should have a passion for understanding customer needs and driving product innovation."
+			],
+			"dateAdded": "2023-05-30"
+		},
+		{
+			"id": 77,
+			"title": "UI/UX Designer",
+			"organization": "Design Studio",
+			"jobType": "Full-time",
+			"locations": ["Los Angeles"],
+			"minimumQualifications": [
+				"Bachelor's degree in Design, Human-Computer Interaction, or related field",
+				"Experience in UI/UX design and prototyping",
+				"Proficiency in design tools such as Sketch or Figma"
+			],
+			"preferredQualifications": [
+				"Experience with user research and usability testing",
+				"Knowledge of front-end development technologies (HTML, CSS, JavaScript)",
+				"Strong creativity and attention to detail"
+			],
+			"description": [
+				"We are seeking a talented UI/UX Designer to join our design team.",
+				"Responsibilities include creating user-centered designs, conducting user research, and collaborating with developers to implement intuitive user interfaces.",
+				"The ideal candidate should have a passion for creating engaging and visually appealing digital experiences."
+			],
+			"dateAdded": "2023-05-31"
+		},
+		{
+			"id": 78,
+			"title": "Financial Analyst",
+			"organization": "Financial Services Ltd.",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Finance, Accounting, or related field",
+				"Experience in financial analysis and modeling",
+				"Strong analytical and problem-solving skills"
+			],
+			"preferredQualifications": [
+				"Professional certifications such as CFA or CPA",
+				"Experience with financial forecasting and budgeting",
+				"Excellent knowledge of financial software and tools"
+			],
+			"description": [
+				"We are looking for a skilled Financial Analyst to join our team.",
+				"Responsibilities include analyzing financial data, preparing financial reports, and providing insights and recommendations to drive business performance.",
+				"The ideal candidate should have a deep understanding of financial principles and the ability to translate complex data into actionable insights."
+			],
+			"dateAdded": "2023-06-01"
+		},
+		{
+			"id": 79,
+			"title": "Front-End Developer",
+			"organization": "Tech Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in front-end development using HTML, CSS, and JavaScript",
+				"Knowledge of modern front-end frameworks (e.g., React, Vue)"
+			],
+			"preferredQualifications": [
+				"Experience with responsive web design",
+				"Familiarity with version control systems (e.g., Git)",
+				"Strong problem-solving and collaboration skills"
+			],
+			"description": [
+				"We are seeking a talented Front-End Developer to join our development team.",
+				"Responsibilities include implementing user interfaces, optimizing web performance, and collaborating with designers and back-end developers.",
+				"The ideal candidate should have a passion for creating intuitive and visually appealing web applications."
+			],
+			"dateAdded": "2023-06-02"
+		},
+		{
+			"id": 80,
+			"title": "Content Writer",
+			"organization": "Creative Agency",
+			"jobType": "Freelance",
+			"locations": ["Remote"],
+			"minimumQualifications": [
+				"Bachelor's degree in English, Journalism, or related field",
+				"Experience in content writing or copywriting",
+				"Exceptional writing and editing skills"
+			],
+			"preferredQualifications": [
+				"Experience in SEO copywriting",
+				"Knowledge of content marketing strategies",
+				"Ability to work independently and meet deadlines"
+			],
+			"description": [
+				"We are looking for a talented Content Writer to join our creative team.",
+				"Responsibilities include creating engaging and compelling content for various mediums, such as blog posts, articles, and social media.",
+				"The ideal candidate should have a passion for storytelling and the ability to adapt writing style to different audiences and platforms."
+			],
+			"dateAdded": "2023-06-03"
+		},
+		{
+			"id": 81,
+			"title": "Network Engineer",
+			"organization": "IT Solutions Ltd.",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in network engineering and administration",
+				"Knowledge of networking protocols and technologies"
+			],
+			"preferredQualifications": [
+				"Certifications such as CCNA or CCNP",
+				"Experience with network security and firewall management",
+				"Strong problem-solving and troubleshooting skills"
+			],
+			"description": [
+				"We are seeking a skilled Network Engineer to join our IT team.",
+				"Responsibilities include designing and maintaining network infrastructure, troubleshooting network issues, and ensuring network performance and security.",
+				"The ideal candidate should have a deep understanding of networking concepts and a passion for implementing robust and scalable network solutions."
+			],
+			"dateAdded": "2023-06-04"
+		},
+		{
+			"id": 82,
+			"title": "Graphic Designer",
+			"organization": "Creative Studio",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Graphic Design or related field",
+				"Experience in graphic design and visual communication",
+				"Proficiency in design software such as Adobe Creative Suite"
+			],
+			"preferredQualifications": [
+				"Experience with branding and logo design",
+				"Knowledge of typography and layout design",
+				"Strong creativity and attention to detail"
+			],
+			"description": [
+				"We are looking for a talented Graphic Designer to join our creative team.",
+				"Responsibilities include creating visual assets for various mediums, such as print, digital, and social media.",
+				"The ideal candidate should have a passion for visual storytelling and the ability to translate concepts into compelling visual designs."
+			],
+			"dateAdded": "2023-06-05"
+		},
+		{
+			"id": 83,
+			"title": "DevOps Engineer",
+			"organization": "Cloud Solutions Inc.",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science or related field",
+				"Experience in DevOps practices and tools",
+				"Knowledge of cloud computing platforms (e.g., AWS, Azure)"
+			],
+			"preferredQualifications": [
+				"Experience with containerization technologies (e.g., Docker, Kubernetes)",
+				"Familiarity with infrastructure-as-code and configuration management tools",
+				"Strong problem-solving and automation skills"
+			],
+			"description": [
+				"We are seeking a skilled DevOps Engineer to join our team.",
+				"Responsibilities include automating infrastructure deployment, monitoring system performance, and ensuring high availability of applications.",
+				"The ideal candidate should have a deep understanding of DevOps principles and a passion for building scalable and reliable software systems."
+			],
+			"dateAdded": "2023-06-06"
+		},
+		{
+			"id": 84,
+			"title": "Marketing Manager",
+			"organization": "Digital Marketing Agency",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Marketing, Business, or related field",
+				"Experience in marketing management and strategy",
+				"Strong analytical and communication skills"
+			],
+			"preferredQualifications": [
+				"Experience with digital marketing channels and tools",
+				"Knowledge of data analytics and market research",
+				"Excellent leadership and project management abilities"
+			],
+			"description": [
+				"We are looking for a skilled Marketing Manager to join our team.",
+				"Responsibilities include developing marketing strategies, managing campaigns, and analyzing marketing performance.",
+				"The ideal candidate should have a passion for driving business growth through effective marketing initiatives."
+			],
+			"dateAdded": "2023-06-07"
+		},
+		{
+			"id": 87,
+			"title": "Data Scientist",
+			"organization": "Analytics Company",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Master's degree in Data Science, Statistics, or related field",
+				"Experience in data analysis and modeling",
+				"Proficiency in programming languages such as Python or R"
+			],
+			"preferredQualifications": [
+				"Experience with machine learning algorithms and techniques",
+				"Knowledge of big data technologies (e.g., Hadoop, Spark)",
+				"Strong problem-solving and analytical skills"
+			],
+			"description": [
+				"We are seeking a talented Data Scientist to join our analytics team.",
+				"Responsibilities include analyzing large datasets, building predictive models, and extracting actionable insights.",
+				"The ideal candidate should have a deep understanding of statistical concepts and a passion for leveraging data to drive business decisions."
+			],
+			"dateAdded": "2023-06-10"
+		},
+		{
+			"id": 88,
+			"title": "Human Resources Manager",
+			"organization": "Global Corporation",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Human Resources or related field",
+				"Experience in HR management and employee relations",
+				"Knowledge of employment laws and regulations"
+			],
+			"preferredQualifications": [
+				"Professional certifications in HR (e.g., SHRM-CP, PHR)",
+				"Experience with talent acquisition and performance management",
+				"Strong interpersonal and leadership skills"
+			],
+			"description": [
+				"We are looking for a skilled Human Resources Manager to join our HR team.",
+				"Responsibilities include overseeing HR operations, developing and implementing HR policies, and supporting employee development and engagement.",
+				"The ideal candidate should have a comprehensive understanding of HR practices and the ability to foster a positive and inclusive work environment."
+			],
+			"dateAdded": "2023-06-11"
+		},
+		{
+			"id": 89,
+			"title": "Product Manager",
+			"organization": "Tech Start-up",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Business, Engineering, or related field",
+				"Experience in product management or related roles",
+				"Strong analytical and strategic thinking skills"
+			],
+			"preferredQualifications": [
+				"Experience with agile development methodologies",
+				"Knowledge of UX/UI principles",
+				"Excellent communication and stakeholder management abilities"
+			],
+			"description": [
+				"We are seeking a talented Product Manager to join our dynamic team.",
+				"Responsibilities include defining product vision, conducting market research, and collaborating with cross-functional teams to deliver innovative solutions.",
+				"The ideal candidate should have a passion for building user-centric products and the ability to translate customer needs into actionable product strategies."
+			],
+			"dateAdded": "2023-06-12"
+		},
+		{
+			"id": 90,
+			"title": "Financial Analyst",
+			"organization": "Financial Services Firm",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Finance, Accounting, or related field",
+				"Experience in financial analysis and forecasting",
+				"Proficiency in financial modeling and Excel"
+			],
+			"preferredQualifications": [
+				"Experience with financial planning and budgeting",
+				"Knowledge of financial software and data visualization tools",
+				"Strong attention to detail and analytical skills"
+			],
+			"description": [
+				"We are looking for a skilled Financial Analyst to join our finance team.",
+				"Responsibilities include conducting financial analysis, preparing reports and forecasts, and providing insights to support business decisions.",
+				"The ideal candidate should have a solid understanding of financial principles and the ability to translate complex data into meaningful recommendations."
+			],
+			"dateAdded": "2023-06-13"
+		},
+		{
+			"id": 91,
+			"title": "UI/UX Designer",
+			"organization": "Design Agency",
+			"jobType": "Full-time",
+			"locations": ["Seattle"],
+			"minimumQualifications": [
+				"Bachelor's degree in Design, Human-Computer Interaction, or related field",
+				"Experience in UI/UX design and prototyping",
+				"Proficiency in design software such as Sketch or Figma"
+			],
+			"preferredQualifications": [
+				"Experience with user research and usability testing",
+				"Knowledge of front-end web technologies (e.g., HTML, CSS)",
+				"Strong creativity and attention to detail"
+			],
+			"description": [
+				"We are seeking a talented UI/UX Designer to join our creative team.",
+				"Responsibilities include designing user interfaces, conducting user research, and collaborating with developers to implement designs.",
+				"The ideal candidate should have a passion for creating intuitive and visually appealing user experiences."
+			],
+			"dateAdded": "2023-06-14"
+		},
+		{
+			"id": 92,
+			"title": "Content Writer",
+			"organization": "Digital Marketing Agency",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in English, Communications, or related field",
+				"Experience in content writing and copywriting",
+				"Excellent writing and editing skills"
+			],
+			"preferredQualifications": [
+				"Experience with SEO and keyword research",
+				"Familiarity with content management systems",
+				"Strong research and storytelling abilities"
+			],
+			"description": [
+				"We are looking for a talented Content Writer to join our creative team.",
+				"Responsibilities include producing engaging and high-quality content for various mediums, such as websites, blogs, and social media.",
+				"The ideal candidate should have a passion for storytelling, a strong command of the English language, and the ability to adapt writing style for different audiences."
+			],
+			"dateAdded": "2023-06-15"
+		},
+		{
+			"id": 93,
+			"title": "Cybersecurity Analyst",
+			"organization": "Technology Solutions",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Cybersecurity, Computer Science, or related field",
+				"Experience in cybersecurity analysis and incident response",
+				"Knowledge of security frameworks and best practices"
+			],
+			"preferredQualifications": [
+				"Professional certifications in cybersecurity (e.g., CISSP, CEH)",
+				"Experience with penetration testing and vulnerability assessment",
+				"Strong problem-solving and critical thinking skills"
+			],
+			"description": [
+				"We are seeking a skilled Cybersecurity Analyst to join our security team.",
+				"Responsibilities include monitoring and analyzing security events, implementing security measures, and conducting risk assessments.",
+				"The ideal candidate should have a deep understanding of cybersecurity principles and a commitment to protecting sensitive information and systems."
+			],
+			"dateAdded": "2023-06-16"
+		},
+		{
+			"id": 94,
+			"title": "Project Manager",
+			"organization": "Engineering Firm",
+			"jobType": "Full-time",
+			"locations": ["New York"],
+			"minimumQualifications": [
+				"Bachelor's degree in Engineering, Business, or related field",
+				"Experience in project management",
+				"Strong organizational and leadership skills"
+			],
+			"preferredQualifications": [
+				"Project management certification (e.g., PMP)",
+				"Experience in engineering or construction projects",
+				"Excellent communication and stakeholder management abilities"
+			],
+			"description": [
+				"We are looking for an experienced Project Manager to join our team.",
+				"Responsibilities include planning, executing, and closing projects, managing project budgets and schedules, and coordinating with internal and external stakeholders.",
+				"The ideal candidate should have a proven track record of successfully delivering projects on time and within budget."
+			],
+			"dateAdded": "2023-06-17"
+		},
+		{
+			"id": 95,
+			"title": "Social Media Manager",
+			"organization": "Digital Agency",
+			"jobType": "Full-time",
+			"locations": ["London"],
+			"minimumQualifications": [
+				"Bachelor's degree in Marketing, Communications, or related field",
+				"Experience in social media management",
+				"Strong knowledge of social media platforms and trends"
+			],
+			"preferredQualifications": [
+				"Experience in content creation and copywriting",
+				"Knowledge of social media analytics and reporting",
+				"Excellent communication and creative thinking skills"
+			],
+			"description": [
+				"We are seeking a talented Social Media Manager to join our marketing team.",
+				"Responsibilities include developing social media strategies, creating engaging content, and monitoring social media performance.",
+				"The ideal candidate should have a deep understanding of social media platforms, a creative mindset, and the ability to drive social media growth and engagement."
+			],
+			"dateAdded": "2023-06-18"
+		},
+		{
+			"id": 96,
+			"title": "Data Engineer",
+			"organization": "Tech Startup",
+			"jobType": "Full-time",
+			"locations": ["San Francisco"],
+			"minimumQualifications": [
+				"Bachelor's degree in Computer Science, Engineering, or related field",
+				"Experience in data engineering and ETL processes",
+				"Proficiency in programming languages such as Python or Java"
+			],
+			"preferredQualifications": [
+				"Experience with big data technologies (e.g., Hadoop, Spark)",
+				"Knowledge of data modeling and database design",
+				"Strong problem-solving and analytical skills"
+			],
+			"description": [
+				"We are looking for a skilled Data Engineer to join our data team.",
+				"Responsibilities include designing and building data pipelines, implementing data integration solutions, and ensuring data quality and availability.",
+				"The ideal candidate should have a strong technical background, a passion for data, and the ability to work with large and complex datasets."
+			],
+			"dateAdded": "2023-06-19"
+		}
+	]
+}

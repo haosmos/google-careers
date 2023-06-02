@@ -1,6 +1,6 @@
 <template>
   <header :class="['w-full', 'text-sm', headerHeightClass]">
-    <div class="fixed top-0 left-0 h-16 w-full">
+    <div class="fixed top-0 left-0 h-16 w-full bg-white">
       <div
           class="flex flex-nowrap h-full border-b border-solid border-brand-gray-1 px-8"
       >
