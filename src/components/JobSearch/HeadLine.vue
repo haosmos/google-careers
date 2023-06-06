@@ -29,7 +29,7 @@ export default {
       return {
         [this.action.toLowerCase()]: true,
       };
-    }
+    },
   },
   created() {
     this.changeTitle();

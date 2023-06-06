@@ -67,7 +67,7 @@ export default {
           location: this.location
         }
       })
-    }
+    },
   }
 };
 </script>
