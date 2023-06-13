@@ -8,7 +8,7 @@
             :to="{name: 'Home'}"
             class="flex h-full items-center text-xl"
         >
-          Chaosmos Ko
+          Horns and hooves
         </router-link>
 
         <nav class="ml-12 h-full">
@@ -32,7 +32,6 @@
           <action-button
               v-else
               text="Sign in"
-              type="primary"
               @click="loginUser"
           />
         </div>
@@ -47,6 +46,9 @@
 
 <script>
 import ActionButton from '@/components/Shared/ActionButton.vue';
+import { useUserStore } from '@/stores/user';
+import { mapStores, mapActions, mapState } from 'pinia';
+
 import ProfileImage from '@/components/Navigation/ProfileImage.vue';
 import SubNavMenu from '@/components/Navigation/SubNavMenu.vue';
 
@@ -60,17 +62,19 @@ export default {
   data() {
     return {
       menuItems: [
-        { text:  'Teams', url: "/" },
-        { text: 'Location', url: "/" },
-        { text: 'Life at company', url: "/" },
-        { text: 'How we hire', url: "/" },
-        { text: 'Students', url: "/" },
-        { text: 'Jobs', url: "/jobs/results" }
+        { text: 'Teams', url: '/' },
+        { text: 'Location', url: '/' },
+        { text: 'Life at company', url: '/' },
+        { text: 'How we hire', url: '/' },
+        { text: 'Students', url: '/' },
+        { text: 'Jobs', url: '/jobs/results' }
       ],
-      isLoggedIn: false
+      // isLoggedIn: false
     };
   },
   computed: {
+    ...mapState(useUserStore, [ 'isLoggedIn' ]),
+    // ...mapStores(useUserStore),
     headerHeightClass() {
       return {
         'h-16': !this.isLoggedIn,
@@ -79,10 +83,8 @@ export default {
     }
   },
   methods: {
-    loginUser() {
-      this.isLoggedIn = true;
-    }
-  }
+    ...mapActions(useUserStore, [ 'loginUser' ]),
+},
 };
 </script>
 

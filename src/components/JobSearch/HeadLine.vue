@@ -5,23 +5,19 @@
       <br />
       for everyone
     </h1>
-    <h2 class="text-3xl font-light">
-      Find your next job at Chaosmos'Ko
-    </h2>
+    <h2 class="text-3xl font-light">Find your next job at Horns and hooves.</h2>
   </section>
 </template>
 
-
 <script>
-import nextElementInList from '@/utils/nextElementInList';
+import nextElementInList from "@/utils/nextElementInList";
 
 export default {
-  name: 'HeadLine',
+  name: "HeadLine",
   data() {
     return {
-      action: 'Build',
+      action: "Build",
       interval: null,
-      mar: true,
     };
   },
   computed: {
@@ -40,30 +36,28 @@ export default {
   methods: {
     changeTitle() {
       this.interval = setInterval(() => {
-        const actions = [ 'Build', 'Create', 'Design', 'Code' ];
+        const actions = ["Build", "Create", "Design", "Code"];
         this.action = nextElementInList(actions, this.action);
-      }, 1500);
-    }
-  }
+      }, 2000);
+    },
+  },
 };
 </script>
 
-
 <style scoped>
 .build {
-  color: #f9ab00;
+  color: #1a73e8;
 }
 
 .create {
-  color: #d93025;
-}
-
-.code {
   color: #34a853;
 }
 
 .design {
-  color: #1a73e8;
+  color: #f9ab00;
 }
 
+.code {
+  color: #d93025;
+}
 </style>

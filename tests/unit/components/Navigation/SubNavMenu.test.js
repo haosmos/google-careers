@@ -6,7 +6,9 @@ describe('SubNavMenu', () => {
     render(SubNavMenu, {
       global: {
         mocks: {
-          $route: routeName,
+          $route: {
+            name: routeName
+          },
         },
         stubs: {
           FontAwesomeIcon: true
@@ -19,8 +21,8 @@ describe('SubNavMenu', () => {
     it('displays job count', () => {
       const routeName = "JobResults";
       renderSubNavMenu(routeName);
-      const jobCount = screen.getByText("1653");
       
+      const jobCount = screen.getByText("1653");
       expect(jobCount).toBeInTheDocument();
     })
   })
