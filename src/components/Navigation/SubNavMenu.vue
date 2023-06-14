@@ -5,7 +5,10 @@
 
       <div>
         <font-awesome-icon :icon="['fas', 'search']" class="mr-3" />
-        <span><span class="text-brand-green-1">1653</span> jobs matched</span>
+        <span>
+          <span class="text-brand-green-1">{{ FILTERED_JOBS_BY_ORGANIZATIONS.length }}
+          </span> jobs matched
+        </span>
       </div>
 
     </div>
@@ -15,11 +18,15 @@
 
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { mapState } from 'pinia';
+
+import { useJobsStore, FILTERED_JOBS_BY_ORGANIZATIONS } from '@/stores/jobs';
 
 export default {
   name: 'SubNavMenu',
   components: { FontAwesomeIcon },
   computed: {
+    ...mapState(useJobsStore, [ FILTERED_JOBS_BY_ORGANIZATIONS ]),
     onJobResultsPage() {
       return this.$route.name === 'JobResults';
     }

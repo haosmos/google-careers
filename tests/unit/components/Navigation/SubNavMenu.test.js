@@ -1,38 +1,54 @@
-import { render, screen } from '@testing-library/vue';
-import SubNavMenu from '@/components/Navigation/SubNavMenu.vue';
+import { render, screen } from "@testing-library/vue";
+import { createTestingPinia } from "@pinia/testing";
 
-describe('SubNavMenu', () => {
+import SubNavMenu from "@/components/Navigation/SubNavMenu.vue";
+import { useJobsStore } from "@/stores/jobs";
+
+describe("SubNavMenu", () => {
   const renderSubNavMenu = (routeName) => {
+    const pinia = createTestingPinia();
+    const jobsStore = useJobsStore();
+
     render(SubNavMenu, {
       global: {
+        plugins: [pinia],
         mocks: {
           $route: {
-            name: routeName
+            name: routeName,
           },
         },
         stubs: {
-          FontAwesomeIcon: true
-        }
+          FontAwesomeIcon: true,
+        },
       },
-    })
-  }
-  
+    });
+
+    return { jobsStore };
+  };
+
   describe("when user is on jobs page", () => {
-    it('displays job count', () => {
+    it("displays job count", async () => {
       const routeName = "JobResults";
-      renderSubNavMenu(routeName);
-      
-      const jobCount = screen.getByText("1653");
+
+      const { jobsStore } = renderSubNavMenu(routeName);
+      const numberOfJobs = 16;
+      jobsStore.FILTERED_JOBS_BY_ORGANIZATIONS = Array(numberOfJobs).fill({});
+
+      const jobCount = await screen.findByText(numberOfJobs);
       expect(jobCount).toBeInTheDocument();
-    })
-  })
-  
+    });
+  });
+
   describe("when user is not on jobs page", () => {
-    it('does NOT displays job count', () => {
+    it("does NOT display job count", () => {
       const routeName = "Home";
-      renderSubNavMenu(routeName)
-      const jobCount = screen.queryByText("1653");
+
+      const { jobsStore } = renderSubNavMenu(routeName);
+      const numberOfJobs = 16;
+      jobsStore.FILTERED_JOBS_BY_ORGANIZATIONS = Array(numberOfJobs).fill({});
+
+      const jobCount = screen.queryByText(numberOfJobs);
       expect(jobCount).not.toBeInTheDocument();
-    })
-  })
-})
+    });
+  });
+});
