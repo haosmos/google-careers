@@ -2,7 +2,7 @@ import { createPinia, setActivePinia} from 'pinia';
 import axios from 'axios';
 
 import { useUserStore } from '@/stores/user';
-import { useJobsStore } from '@/stores/jobs';
+import { UNIQUE_JOB_TYPES, useJobsStore } from '@/stores/jobs';
 
 vi.mock("axios");
 
@@ -54,6 +54,21 @@ describe("getters", () => {
     });
   });
   
+  describe("UNIQUE_JOB_TYPES", () => {
+      it("finds unique job types from list of jobs", () => {
+        const store = useJobsStore();
+        store.jobs = [
+          { jobType: "Full Time" },
+          { jobType: "Temporary" },
+          { jobType: "Full Time" },
+        ];
+        
+        const result = store.UNIQUE_JOB_TYPES;
+        
+        expect(result).toEqual(new Set(["Full Time", "Temporary"]));
+      })
+  })
+  
   describe("FILTERED_JOBS_BY_ORGANIZATIONS", () => {
     it("identifies jobs that are associated with the given organizations", () => {
       const jobsStore = useJobsStore();
@@ -94,4 +109,45 @@ describe("getters", () => {
       });
     });
   });
+  
+  describe("FILTERED_JOBS_BY_TYPES", () => {
+    it("identifies jobs that are associated with given job types", () => {
+      const jobsStore = useJobsStore();
+      jobsStore.jobs = [
+        { jobType: "Full Time" },
+        { jobType: "Temporary" },
+        { jobType: "Part Time" },
+      ];
+      const userStore = useUserStore();
+      userStore.selectedJobTypes = ["Full Time", "Part Time"];
+      
+      const result = jobsStore.FILTERED_JOBS_BY_JOB_TYPES;
+      
+      expect(result).toEqual([
+        { jobType: "Full Time" },
+        { jobType: "Part Time" },
+      ]);
+    })
+    
+    describe("when the user has not selected any job types", () => {
+      it('should ', function () {
+        const jobsStore = useJobsStore();
+        jobsStore.jobs = [
+          { jobType: "Full Time" },
+          { jobType: "Temporary" },
+          { jobType: "Part Time" },
+        ];
+        
+        const userStore = useUserStore();
+        userStore.selectedJobTypes = [];
+        
+        const result = jobsStore.FILTERED_JOBS_BY_JOB_TYPES;
+        expect(result).toEqual([
+          { jobType: "Full Time" },
+          { jobType: "Temporary" },
+          { jobType: "Part Time" },
+        ])
+      });
+    })
+  })
 })
