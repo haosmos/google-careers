@@ -16,22 +16,36 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { mapState } from 'pinia';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 
-import { useJobsStore, FILTERED_JOBS } from '@/stores/jobs';
+import { useJobsStore } from '@/stores/jobs';
 
-export default {
-  name: 'SubNavMenu',
-  components: { FontAwesomeIcon },
-  computed: {
-    ...mapState(useJobsStore, [ FILTERED_JOBS ]),
-    onJobResultsPage() {
-      return this.$route.name === 'JobResults';
-    }
-  },
-};
+const route = useRoute();
+const jobsStore = useJobsStore();
+
+const onJobResultsPage = computed(() => route.name === 'JobResults');
+const FILTERED_JOBS = computed(() => jobsStore.FILTERED_JOBS);
+
+// ### OPTIONS API ###
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+// import { mapState } from 'pinia';
+//
+// import { useJobsStore, FILTERED_JOBS } from '@/stores/jobs';
+//
+// export default {
+//   name: 'SubNavMenu',
+//   components: { FontAwesomeIcon },
+//   computed: {
+//     ...mapState(useJobsStore, [ FILTERED_JOBS ]),
+//     onJobResultsPage() {
+//       return this.$route.name === 'JobResults';
+//     }
+//   },
+// };
+
 </script>
 
 
