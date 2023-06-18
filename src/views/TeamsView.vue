@@ -1,7 +1,9 @@
 <template>
   <header-container>
     <template #title>
-      <h1 class="w-full text-4xl font-normal">Teams</h1>
+      <h1 class="w-full text-4xl font-normal">
+        Teams
+      </h1>
     </template>
 
     <template #subtitle>

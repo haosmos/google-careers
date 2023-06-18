@@ -1,9 +1,9 @@
 <template>
   <input
-      type="text"
-      :value="modelValue"
-      class="w-full text-lg font-normal focus:outline-none"
-      @input="handleInput"
+    type="text"
+    :value="modelValue"
+    class="w-full text-lg font-normal focus:outline-none"
+    @input="handleInput"
   >
 </template>
 

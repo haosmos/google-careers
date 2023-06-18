@@ -3,15 +3,19 @@
     <div class="mt-5">
       <fieldset>
         <ul class="flex flex-row flex-wrap">
-          <li v-for="value in uniqueValues" :key="value" class="h-8 w-1/2">
+          <li
+            v-for="value in uniqueValues"
+            :key="value"
+            class="h-8 w-1/2"
+          >
             <input
-                :id="value"
-                v-model="selectedValues"
-                :value="value"
-                type="checkbox"
-                class="mr-3"
-                @change="selectValue"
-            />
+              :id="value"
+              v-model="selectedValues"
+              :value="value"
+              type="checkbox"
+              class="mr-3"
+              @change="selectValue"
+            >
             <label :for="value">{{ value }}</label>
           </li>
         </ul>

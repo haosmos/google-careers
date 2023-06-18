@@ -1,8 +1,8 @@
 <template>
   <li class="mb-7">
     <router-link
-        :to="jobPageLink"
-        class="mx-auto block rounded border border-solid border-brand-gray-2 bg-white hover:shadow-gray"
+      :to="jobPageLink"
+      class="mx-auto block rounded border border-solid border-brand-gray-2 bg-white hover:shadow-gray"
     >
       <div class="mx-8 border-b border-solid border-brand-gray-2 pt-5 pb-2">
         <h2 class="mb-2 text-2xl">
@@ -17,9 +17,9 @@
           <div>
             <ul>
               <li
-                  v-for="location in job.locations"
-                  :key="location"
-                  class="mr-5 inline-block"
+                v-for="location in job.locations"
+                :key="location"
+                class="mr-5 inline-block"
               >
                 <span>{{ location }}</span>
               </li>
@@ -36,8 +36,8 @@
           <div>
             <ul class="list-disc pl-8">
               <li
-                  v-for="qualification in job.minimumQualifications"
-                  :key="qualification"
+                v-for="qualification in job.minimumQualifications"
+                :key="qualification"
               >
                 {{ qualification }}
               </li>
@@ -46,12 +46,14 @@
         </div>
 
         <div class="mt-2 text-center">
-          <router-link :to="jobPageLink" class="text-brand-blue-1">
+          <router-link
+            :to="jobPageLink"
+            class="text-brand-blue-1"
+          >
             Expand
           </router-link>
         </div>
       </div>
-
     </router-link>
   </li>
 </template>
