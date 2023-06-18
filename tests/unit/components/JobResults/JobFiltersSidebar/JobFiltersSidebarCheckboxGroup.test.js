@@ -13,10 +13,10 @@ describe("JobFiltersSidebarCheckboxGroup", () => {
     action: vi.fn(),
     ...props,
   });
-
+  
   const renderJobFiltersSidebarCheckboxGroup = (props) => {
     const pinia = createTestingPinia();
-
+    
     render(JobFiltersSidebarCheckboxGroup, {
       props: {
         ...props,
@@ -29,22 +29,22 @@ describe("JobFiltersSidebarCheckboxGroup", () => {
       },
     });
   };
-
+  
   it("renders unique list of values", async () => {
     const props = createProps({
       header: "Job Types",
       uniqueValues: new Set(["Full-time", "Part-time"]),
     });
     renderJobFiltersSidebarCheckboxGroup(props);
-
+    
     const button = screen.getByRole("button", { name: /job types/i });
     await userEvent.click(button);
-
+    
     const jobTypesListItems = screen.getAllByRole("listitem");
     const jobTypes = jobTypesListItems.map((node) => node.textContent);
     expect(jobTypes).toEqual(["Full-time", "Part-time"]);
   });
-
+  
   describe("when user clicks checkbox", () => {
     it("communicates that user has selected checkbox for value", async () => {
       useRouter.mockReturnValue({ push: vi.fn() });
@@ -55,18 +55,18 @@ describe("JobFiltersSidebarCheckboxGroup", () => {
         action,
       });
       renderJobFiltersSidebarCheckboxGroup(props);
-
+      
       const button = screen.getByRole("button", { name: /job types/i });
       await userEvent.click(button);
-
+      
       const fullTimeCheckbox = screen.getByRole("checkbox", {
         name: /full-time/i,
       });
       await userEvent.click(fullTimeCheckbox);
-
+      
       expect(action).toHaveBeenCalledWith(["Full-time"]);
     });
-
+    
     it("navigates user to job results page to see fresh batch of filtered jobs", async () => {
       const push = vi.fn();
       useRouter.mockReturnValue({ push });
@@ -75,15 +75,15 @@ describe("JobFiltersSidebarCheckboxGroup", () => {
         uniqueValues: new Set(["Full-time"]),
       });
       renderJobFiltersSidebarCheckboxGroup(props);
-
+      
       const button = screen.getByRole("button", { name: /job types/i });
       await userEvent.click(button);
-
+      
       const fullTimeCheckbox = screen.getByRole("checkbox", {
         name: /full-time/i,
       });
       await userEvent.click(fullTimeCheckbox);
-
+      
       expect(push).toHaveBeenCalledWith({ name: "JobResults" });
     });
   });

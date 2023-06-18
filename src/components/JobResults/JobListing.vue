@@ -6,15 +6,13 @@
     >
       <div class="mx-8 border-b border-solid border-brand-gray-2 pt-5 pb-2">
         <h2 class="mb-2 text-2xl">
-          {{ job.title  }}
+          {{ job.title }}
         </h2>
 
         <div class="flex flex-row align-middle ">
           <div class="mr-5">
             <span>{{ job.organization }}</span>
           </div>
-
-
 
           <div>
             <ul>
@@ -23,7 +21,7 @@
                   :key="location"
                   class="mr-5 inline-block"
               >
-                <span>{{location}}</span>
+                <span>{{ location }}</span>
               </li>
             </ul>
           </div>
@@ -41,7 +39,7 @@
                   v-for="qualification in job.minimumQualifications"
                   :key="qualification"
               >
-                {{qualification}}
+                {{ qualification }}
               </li>
             </ul>
           </div>
@@ -58,21 +56,34 @@
   </li>
 </template>
 
-<script>
-export default {
-  name: 'JobListing',
-  props: {
-    job: {
-      type: Object,
-      required: true
-    }
-  },
-  computed: {
-    jobPageLink() {
-      return `/jobs/results/${this.job.id}`;
-    }
+<script setup>
+import { computed } from 'vue';
+
+const props = defineProps({
+  job: {
+    type: Object,
+    required: true
   }
-};
+});
+
+const jobPageLink = computed(() => `/jobs/results/${props.job.id}`);
+
+/*
+ export default {
+ name: 'JobListing',
+ props: {
+ job: {
+ type: Object,
+ required: true
+ }
+ },
+ computed: {
+ jobPageLink() {
+ return `/jobs/results/${this.job.id}`;
+ }
+ }
+ };
+ */
 </script>
 
 <style scoped>
