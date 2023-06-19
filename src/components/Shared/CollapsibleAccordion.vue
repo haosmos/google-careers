@@ -5,17 +5,12 @@
       role="button"
       @click="open"
     >
-      <h3 class="text-base font-semibold">
-        {{ header }}
-      </h3>
-
+      <h3 class="text-base font-semibold">{{ header }}</h3>
+      
       <font-awesome-icon :icon="caretIcon" />
     </div>
-
-    <div
-      v-if="isOpen"
-      class="mt-5 w-full"
-    >
+    
+    <div v-if="isOpen" class="mt-5 w-full">
       <slot>
         <p>Whoops, somebody forgot to populate me!</p>
       </slot>
@@ -23,14 +18,14 @@
   </div>
 </template>
 
-<script setup>
-import { ref, computed } from 'vue';
+<script lang="ts" setup>
+import { computed, ref } from 'vue';
 
 defineProps({
   header: {
     type: String,
     required: true,
-  }
+  },
 });
 
 const isOpen = ref(false);
@@ -40,7 +35,6 @@ const open = () => {
 };
 
 const caretIcon = computed(() =>
-    isOpen.value ? [ 'fas', 'angle-up' ] : [ 'fas', 'angle-down' ]
+  isOpen.value ? ['fas', 'angle-up'] : ['fas', 'angle-down']
 );
-
 </script>

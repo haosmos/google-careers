@@ -18,12 +18,12 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { useJobsStore } from '@/stores/jobs';
+import { useJobsStore } from '@/stores/jobs.ts';
 
 const route = useRoute();
 const jobsStore = useJobsStore();

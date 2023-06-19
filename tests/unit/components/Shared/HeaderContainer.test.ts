@@ -9,17 +9,17 @@ describe("HeaderContainer", () => {
         title: "<h2>Some title</h2>",
       },
     });
-
+    
     expect(screen.getByText("Some title")).toBeInTheDocument();
   });
-
+  
   it("allows parent component to provide subtitle content", () => {
     render(HeaderContainer, {
       slots: {
         subtitle: "<h3>Some subtitle</h3>",
       },
     });
-
+    
     expect(screen.getByText("Some subtitle")).toBeInTheDocument();
   });
 });

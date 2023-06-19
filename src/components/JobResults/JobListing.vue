@@ -8,12 +8,12 @@
         <h2 class="mb-2 text-2xl">
           {{ job.title }}
         </h2>
-
+        
         <div class="flex flex-row align-middle ">
           <div class="mr-5">
             <span>{{ job.organization }}</span>
           </div>
-
+          
           <div>
             <ul>
               <li
@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-
+      
       <div class="px-8 py-4">
         <div>
           <h3 class="mt-1 mb-2">
@@ -44,7 +44,7 @@
             </ul>
           </div>
         </div>
-
+        
         <div class="mt-2 text-center">
           <router-link
             :to="jobPageLink"
@@ -58,12 +58,14 @@
   </li>
 </template>
 
-<script setup>
-import { computed } from 'vue';
+<script lang="ts" setup>
+import { computed, type PropType } from 'vue';
+
+import { Job } from '@/api/types';
 
 const props = defineProps({
   job: {
-    type: Object,
+    type: Object as PropType<Job>,
     required: true
   }
 });

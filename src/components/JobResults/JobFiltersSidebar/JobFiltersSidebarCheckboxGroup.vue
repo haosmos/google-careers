@@ -3,19 +3,15 @@
     <div class="mt-5">
       <fieldset>
         <ul class="flex flex-row flex-wrap">
-          <li
-            v-for="value in uniqueValues"
-            :key="value"
-            class="h-8 w-1/2"
-          >
+          <li v-for="value in uniqueValues" :key="value" class="h-8 w-1/2">
             <input
               :id="value"
               v-model="selectedValues"
               :value="value"
-              type="checkbox"
               class="mr-3"
+              type="checkbox"
               @change="selectValue"
-            >
+            />
             <label :for="value">{{ value }}</label>
           </li>
         </ul>
@@ -24,11 +20,11 @@
   </collapsible-accordion>
 </template>
 
-<script setup>
-import { ref } from "vue";
-import { useRouter } from "vue-router";
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
-import CollapsibleAccordion from "@/components/Shared/CollapsibleAccordion.vue";
+import CollapsibleAccordion from '@/components/Shared/CollapsibleAccordion.vue';
 
 const props = defineProps({
   header: {
@@ -36,7 +32,7 @@ const props = defineProps({
     required: true,
   },
   uniqueValues: {
-    type: Set,
+    type: Set<string>,
     required: true,
   },
   action: {
@@ -45,11 +41,11 @@ const props = defineProps({
   },
 });
 
-const selectedValues = ref([]);
+const selectedValues = ref<string[]>([]);
 const router = useRouter();
 
 const selectValue = () => {
   props.action(selectedValues.value);
-  router.push({ name: "JobResults" });
+  router.push({ name: 'JobResults' });
 };
 </script>

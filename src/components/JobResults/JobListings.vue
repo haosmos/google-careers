@@ -7,13 +7,13 @@
         :job="job"
       />
     </ol>
-
+    
     <div class="mx-auto mt-8">
       <div class="flex flex-row flex-nowrap">
         <p class="flex-grow text-sm">
           Page {{ currentPage }}
         </p>
-
+        
         <div class="flex items-center justify-center">
           <router-link
             v-if="previousPage"
@@ -23,7 +23,7 @@
           >
             Previous
           </router-link>
-
+          
           <router-link
             v-if="nextPage"
             :to="{ name: 'JobResults', query: { page: nextPage } }"
@@ -38,9 +38,10 @@
   </main>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import usePreviousAndNextPages from '@/composables/usePreviousAndNextPage';
 import { computed, onMounted } from 'vue';
+
 import { useRoute } from 'vue-router';
 
 import JobListing from '@/components/JobResults/JobListing.vue';
@@ -52,12 +53,12 @@ onMounted(jobsStore.FETCH_JOBS);
 const FILTERED_JOBS = computed(() => jobsStore.FILTERED_JOBS);
 
 const route = useRoute();
-const currentPage = computed(() => Number.parseInt(route.query.page || '1'));
+const currentPage = computed(() => Number.parseInt(route.query.page as string || '1'));
 const maxPage = computed(() => Math.ceil(FILTERED_JOBS.value.length / 10));
 
 const { previousPage, nextPage } = usePreviousAndNextPages(
-    currentPage,
-    maxPage
+  currentPage,
+  maxPage
 );
 
 const displayedJobs = computed(() => {
