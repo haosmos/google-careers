@@ -27,10 +27,10 @@ describe('actions', () => {
   
   describe('FETCH_JOBS', () => {
     it('makes API request and stores received jobs', async () => {
-      axiosGetMock.mockResolvedValue({ data: ['Job 1', 'Job 2'] });
+      axiosGetMock.mockResolvedValue({ data: [ 'Job 1', 'Job 2' ] });
       const store = useJobsStore();
       await store.FETCH_JOBS();
-      expect(store.jobs).toEqual(['Job 1', 'Job 2']);
+      expect(store.jobs).toEqual([ 'Job 1', 'Job 2' ]);
     });
   });
 });
@@ -51,7 +51,7 @@ describe('getters', () => {
       
       const result = store.UNIQUE_ORGANIZATIONS;
       
-      expect(result).toEqual(new Set(['Google', 'Amazon']));
+      expect(result).toEqual(new Set([ 'Google', 'Amazon' ]));
     });
   });
   
@@ -66,7 +66,7 @@ describe('getters', () => {
       
       const result = store.UNIQUE_JOB_TYPES;
       
-      expect(result).toEqual(new Set(['Full-time', 'Temporary']));
+      expect(result).toEqual(new Set([ 'Full-time', 'Temporary' ]));
     });
   });
   
@@ -86,7 +86,7 @@ describe('getters', () => {
     
     it('identifies if job is associated with given organizations', () => {
       const userStore = useUserStore();
-      userStore.selectedOrganizations = ['Google', 'Microsoft'];
+      userStore.selectedOrganizations = [ 'Google', 'Microsoft' ];
       const store = useJobsStore();
       const job = createJob({ organization: 'Google' });
       
@@ -112,11 +112,37 @@ describe('getters', () => {
     
     it('identifies if job is associated with given job types', () => {
       const userStore = useUserStore();
-      userStore.selectedJobTypes = ['Full-time', 'Part-time'];
+      userStore.selectedJobTypes = [ 'Full-time', 'Part-time' ];
       const store = useJobsStore();
       const job = createJob({ jobType: 'Part-time' });
       
       const result = store.INCLUDE_JOB_BY_JOB_TYPE(job);
+      
+      expect(result).toBe(true);
+    });
+  });
+  
+  describe('INCLUDE_JOB_BY_DEGREE', () => {
+    describe('when the user has not selected any degrees', () => {
+      it('includes job', () => {
+        const userStore = useUserStore();
+        userStore.selectedDegrees = [];
+        const store = useJobsStore();
+        const job = createJob();
+        
+        const result = store.INCLUDE_JOB_BY_DEGREE(job);
+        
+        expect(result).toBe(true);
+      });
+    });
+    
+    it('identifies if job is associated with given degrees', () => {
+      const userStore = useUserStore();
+      userStore.selectedDegrees = [ 'Master\'s' ];
+      const store = useJobsStore();
+      const job = createJob({ degree: 'Master\'s' });
+      
+      const result = store.INCLUDE_JOB_BY_DEGREE(job);
       
       expect(result).toBe(true);
     });

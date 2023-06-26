@@ -1,5 +1,7 @@
-import { useUserStore } from '@/stores/user.js';
 import { createPinia, setActivePinia } from 'pinia';
+
+import { useUserStore } from '@/stores/user';
+import { describe } from 'vitest';
 
 describe('state', () => {
   beforeEach(() => {
@@ -16,9 +18,14 @@ describe('state', () => {
     expect(store.selectedOrganizations).toEqual([]);
   });
   
-  it('stores job types that user would like to filter jobs by', () => {
+  it('stores job types that the user would like to filter jobs by', () => {
     const store = useUserStore();
     expect(store.selectedJobTypes).toEqual([]);
+  });
+  
+  it('stores degrees that the user would like to filter jobs by', () => {
+    const store = useUserStore();
+    expect(store.selectedDegrees).toEqual([]);
   });
 });
 
@@ -27,10 +34,10 @@ describe('actions', () => {
     setActivePinia(createPinia());
   });
   
-  describe('loginUser', () => {
-    it('sets isLoggedIn to true', () => {
+  describe('LOGIN_USER', () => {
+    it('logs the user in', () => {
       const store = useUserStore();
-      store.loginUser();
+      store.LOGIN_USER();
       expect(store.isLoggedIn).toBe(true);
     });
   });
@@ -51,4 +58,26 @@ describe('actions', () => {
     });
   });
   
+  describe('ADD_SELECTED_DEGREES', () => {
+    it('updates degrees the user has chosen to filter jobs by', () => {
+      const store = useUserStore();
+      store.ADD_SELECTED_DEGREES([ 'Bachelor\'s', 'Master\'s' ]);
+      expect(store.selectedDegrees).toEqual([ 'Bachelor\'s', 'Master\'s' ]);
+    });
+  });
+  
+  describe('CLEAR_USER_JOB_FILTER_SELECTIONS', () => {
+    it('removes all job filters that user has chosen', () => {
+      const store = useUserStore();
+      store.selectedDegrees = [ 'Random degree' ];
+      store.selectedJobTypes = [ 'Random job type' ];
+      store.selectedOrganizations = [ 'Random organization' ];
+      
+      store.CLEAR_USER_JOB_FILTER_SELECTIONS();
+      
+      expect(store.selectedDegrees).toEqual([]);
+      expect(store.selectedJobTypes).toEqual([]);
+      expect(store.selectedOrganizations).toEqual([]);
+    });
+  });
 });

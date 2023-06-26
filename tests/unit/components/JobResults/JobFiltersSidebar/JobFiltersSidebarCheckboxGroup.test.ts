@@ -8,12 +8,13 @@ vi.mock('vue-router');
 
 import JobFiltersSidebarCheckboxGroup
   from '@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarCheckboxGroup.vue';
+import { useUserStore } from '@/stores/user';
+import { describe } from 'vitest';
 
 const useRouterMock = useRouter as Mock;
 
 describe('JobFiltersSidebarCheckboxGroup', () => {
   interface JobFiltersSidebarCheckboxGroupProps {
-    header: string;
     uniqueValues: Set<string>;
     action: Mock;
   }
@@ -21,7 +22,6 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
   const createProps = (
     props: Partial<JobFiltersSidebarCheckboxGroupProps> = {}
   ): JobFiltersSidebarCheckboxGroupProps => ({
-    header: 'Some header',
     uniqueValues: new Set([ 'ValueA', 'ValueB' ]),
     action: vi.fn(),
     ...props,
@@ -30,7 +30,11 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
   const renderJobFiltersSidebarCheckboxGroup = (
     props: JobFiltersSidebarCheckboxGroupProps
   ) => {
-    const pinia = createTestingPinia();
+    const pinia = createTestingPinia(
+      {
+        stubActions: false
+      });
+    const userStore = useUserStore();
     
     render(JobFiltersSidebarCheckboxGroup, {
       props: {
@@ -38,22 +42,20 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
       },
       global: {
         plugins: [ pinia ],
-        stubs: {
-          FontAwesomeIcon: true,
-        },
       },
+      
     });
+    
+    return {
+      userStore,
+    };
   };
   
   it('renders unique list of values', async () => {
     const props = createProps({
-      header: 'Job Types',
       uniqueValues: new Set([ 'Full-time', 'Part-time' ]),
     });
     renderJobFiltersSidebarCheckboxGroup(props);
-    
-    const button = screen.getByRole('button', { name: /job types/i });
-    await userEvent.click(button);
     
     const jobTypesListItems = screen.getAllByRole('listitem');
     const jobTypes = jobTypesListItems.map((node) => node.textContent);
@@ -65,14 +67,10 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
       useRouterMock.mockReturnValue({ push: vi.fn() });
       const action = vi.fn();
       const props = createProps({
-        header: 'Job Types',
         uniqueValues: new Set([ 'Full-time', 'Part-time' ]),
         action,
       });
       renderJobFiltersSidebarCheckboxGroup(props);
-      
-      const button = screen.getByRole('button', { name: /job types/i });
-      await userEvent.click(button);
       
       const fullTimeCheckbox = screen.getByRole('checkbox', {
         name: /full-time/i,
@@ -88,13 +86,9 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
         const push = vi.fn();
         useRouterMock.mockReturnValue({ push });
         const props = createProps({
-          header: 'Job Types',
           uniqueValues: new Set([ 'Full-time' ]),
         });
         renderJobFiltersSidebarCheckboxGroup(props);
-        
-        const button = screen.getByRole('button', { name: /job types/i });
-        await userEvent.click(button);
         
         const fullTimeCheckbox = screen.getByRole('checkbox', {
           name: /full-time/i,
@@ -105,4 +99,39 @@ describe('JobFiltersSidebarCheckboxGroup', () => {
       }
     );
   });
+  
+  describe('when user clears job filters', () => {
+    it('unchecks any checked checkboxes', async () => {
+      useRouterMock.mockReturnValue({ push: vi.fn() });
+      
+      const props = createProps({
+        uniqueValues: new Set([ 'Full-time' ]),
+      });
+      
+      const { userStore } = renderJobFiltersSidebarCheckboxGroup(props);
+      
+      const fullTimeCheckboxBeforeAction = screen.getByRole<HTMLInputElement>(
+        'checkbox',
+        {
+          name: /full-time/i,
+        }
+      );
+      
+      await userEvent.click(fullTimeCheckboxBeforeAction);
+      
+      expect(fullTimeCheckboxBeforeAction.checked).toBe(true);
+      
+      userStore.CLEAR_USER_JOB_FILTER_SELECTIONS();
+      
+      const fullTimeCheckboxAfterAction = await screen.findByRole<HTMLInputElement>(
+        'checkbox',
+        {
+          name: /full-time/i,
+        }
+      );
+      
+      expect(fullTimeCheckboxAfterAction.checked).toBe(false);
+    });
+  });
+  
 });

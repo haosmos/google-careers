@@ -7,6 +7,8 @@ import { useRoute } from 'vue-router';
 vi.mock('vue-router');
 
 import JobListings from '@/components/JobResults/JobListings.vue';
+import { useDegreesStore } from '@/stores/degrees';
+
 import { useJobsStore } from '@/stores/jobs';
 
 const useRouteMock = useRoute as Mock;
@@ -17,6 +19,7 @@ describe('JobListings', () => {
     const jobsStore = useJobsStore();
     // @ts-expect-error
     jobsStore.FILTERED_JOBS = Array(15).fill({});
+    const degreesStore = useDegreesStore();
     
     render(JobListings, {
       global: {
@@ -27,7 +30,7 @@ describe('JobListings', () => {
       },
     });
     
-    return { jobsStore };
+    return { degreesStore, jobsStore };
   };
   
   it('fetches jobs', () => {
@@ -36,6 +39,14 @@ describe('JobListings', () => {
     const { jobsStore } = renderJobListings();
     
     expect(jobsStore.FETCH_JOBS).toHaveBeenCalled();
+  });
+  
+  it('fetches degrees', () => {
+    useRouteMock.mockReturnValue({ query: {} });
+    
+    const { degreesStore } = renderJobListings();
+    
+    expect(degreesStore.FETCH_DEGREES).toHaveBeenCalled();
   });
   
   it('displays maximum of 10 jobs', async () => {
