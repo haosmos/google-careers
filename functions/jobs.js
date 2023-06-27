@@ -1,8 +1,9 @@
-// /.netlify/functions/jobs
+// domain/.netlify/functions/jobs
 require('dotenv')
     .config();
 
 exports.handler = async function (event, context) {
+  
   const db = {
     'degrees': [
       {
@@ -2868,6 +2869,6 @@ exports.handler = async function (event, context) {
   
   return {
     statusCode: 200,
-    body: db,
+    body: JSON.stringify(db),
   };
 };
