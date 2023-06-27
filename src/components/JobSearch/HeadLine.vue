@@ -27,7 +27,7 @@ const changeTitle = () => {
   interval.value = setInterval(() => {
     const actions = ['Build', 'Create', 'Design', 'Code'];
     action.value = nextElementInList(actions, action.value);
-  }, 3000);
+  }, 1500);
 };
 
 onMounted(changeTitle);
