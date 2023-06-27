@@ -1,4 +1,4 @@
-// domain/.netlify/functions/jobs
+// /.netlify/functions/jobs
 require('dotenv')
     .config();
 
