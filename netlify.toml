@@ -4,3 +4,4 @@ functions = './functions'
 [[redirects]]
 from = "/jobs"
 to = "/.netlify/functions/jobs"
+status = 200
