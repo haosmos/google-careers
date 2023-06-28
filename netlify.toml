@@ -5,3 +5,13 @@ functions = './functions'
 from = "/jobs"
 to = "/.netlify/functions/jobs"
 status = 200
+
+[[redirects]]
+from = "/degrees"
+to = "/.netlify/functions/jobs"
+status = 200
+
+[[redirects]]
+from = "/spotlights"
+to = "/.netlify/functions/jobs"
+status = 200
